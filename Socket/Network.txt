@@ -1,0 +1,23 @@
+* IP Adress: A unique string of number seperated by full stop that identifies each computer using Internet protocol to communicate ocer the network.
+The number ranges from 0 to 255
+eg: 192.168.0.104
+
+* There are two kind of IP addresses:
+1: Public IP Adresses:- The IP Adresses provided by Internet Service Provider. Eg: Vodafone
+2: Private IP Adresses:- The IP Adresss provider by wifi or Router
+
+To find the Public Ip Adresses go  to google and type: What's my IP Adresses.
+To find the private IP Adresses go to cmd and type: ipconfig: IPv4
+In order to find the IP Adresses of any website go in cmd and type: ping google.
+
+* Ports:tHINK IP adresses as the house number and think ports as exact room number where you are living.
+In order to open ports uning cmd: netstat -a -b -n
+
+* Sockets: Asockets is one endpoint of a two-way communication link between two programs running on the network. A Socket is bound to a port number so that the TCP(Transmittion Control Protocol) layer can identify the application that the data designed to be send to. An endpoint is a combination of an IP ddresses and a port number.
+
+Scockets command in the the python:
+To create an sockets: Socket.Socket()
+To bind the IP adresses and port to socket we use: s.bind(host, port)
+To send a  message use : s.send()
+To receive a messange:  s.recv()
+To close the socket : s.close()
